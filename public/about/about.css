@@ -19,18 +19,7 @@ body {
     padding: 0;
 }
 
-h1{
-    background-color: #0336FF;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
-    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
-    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
-    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
-    border-radius: var(--border-radius-box);
-    text-shadow: 0 0 2px white;
-}
+
 
 .top-container{
     display: flex;
@@ -65,9 +54,47 @@ h1{
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
+
+
+
+.content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.content .title {
+    font-weight: bold;
+}
+
+.content .value {
+    padding-left: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn{
     margin: 10px;
@@ -100,7 +127,7 @@ h1{
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .start-container {
         width: 90%;
@@ -137,16 +164,21 @@ h1{
     transition: all .2s;
 }
 
-.image-container:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
 
 
 
 @media (max-width: 202px) {
     .image-container {
         width: 100px;
-    height: 100px;
+        height: 100px;
+        background-size: 100px;
     }
+}
+
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0336FF;
 }
