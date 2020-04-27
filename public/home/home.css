@@ -147,6 +147,7 @@ h1{
 @media (max-width: 202px) {
     .image-container {
         width: 100px;
-    height: 100px;
+        height: 100px;
+        background-size: 100px;
     }
 }
