@@ -122,13 +122,13 @@ h1{
     align-items: center;
 
     border-radius: 100%;
-    border: 1px solid #FF0266;
+    border: 4px solid #0336FF;
 
     -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
     -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
     box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
 
-    background-image: url("./blueberries-1296x728-feature.jpg");
+    background-image: url("./FB_IMG_1538226423623.jpg");
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: center;
