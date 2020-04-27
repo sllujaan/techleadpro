@@ -47,7 +47,9 @@ h1{
     box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
     border-radius: var(--border-radius-box);
     padding: 40px 10px;
-    margin-top: 50px;
+    
+    
+    /*margin-top: 50px;*/
 
     width: 50%;
     display: flex;
@@ -132,6 +134,12 @@ h1{
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all .2s;
+}
+
+.image-container:hover {
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 
