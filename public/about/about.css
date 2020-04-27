@@ -28,6 +28,7 @@ body {
 
     padding: 10px 0;
 
+
 }
 
 .start-container{
@@ -47,6 +48,9 @@ body {
     align-items: center;
 
 
+
+
+
 }
 
 .start-container > div {
@@ -56,6 +60,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 
@@ -75,7 +80,13 @@ body {
 }
 
 .content .value {
+    /*
     padding-left: 20px;
+    */
+    padding-left: 20px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 }
 
