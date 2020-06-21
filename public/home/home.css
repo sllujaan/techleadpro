@@ -182,8 +182,9 @@ h1{
 
 
 .container {
+    /*
     background-color: orange;
-
+    */
     padding: 20px 10px;
 
 
@@ -203,7 +204,9 @@ h1{
 
 
 .container > .child {
+    /*
     background-color: grey;
+    */
 
     width: 98%;
     overflow-wrap: break-word;
@@ -214,6 +217,12 @@ h1{
 
 .container > .child > a {
     text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
+.container > .child > :visited {
+    color: blue;
 }
 
 .container > .child > a:hover {
@@ -222,8 +231,9 @@ h1{
 
 
 .container > .tech {
+    /*
     background-color: green;
-    
+    */
     width: 80%;
     
     
@@ -239,9 +249,10 @@ h1{
 
 
 .container > .tech > * {
-    background-color: brown;
+    background-color: lightgray;
     margin: 10px 10px;
-    min-width: 0;    
+    min-width: 0;
+    border-radius: 10px;
 
     overflow-wrap: break-word;
 
@@ -262,7 +273,9 @@ h1{
 }
 
 .container >  .social-links > * {
+    /*
     background-color: gold;
+    */
     margin: 0px 10px;
 }
 

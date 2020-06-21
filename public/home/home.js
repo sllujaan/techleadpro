@@ -8,11 +8,11 @@ var container_content = document.querySelector(".container-content")
 
 
 var content_obj = {
-    title: "app title",
+    title: "aaaaaa",
     titleLink: "link....",
     description: "ou description....sss",
-    technology: ["c++", "java", "javascript"],
-    gitLink: "githubLink"
+    technology: ["c++" , "java", "javascript", "node js"],
+    gitLink: `https://github.com/sllujaan`
 }
 
 
@@ -24,12 +24,19 @@ var content_obj = {
 
 function getContentContainer({title, titleLink, description, technology, gitLink}) {
 
-    /*
+    
     var stringConstructor = "test".constructor;
     var arrayConstructor = [].constructor;
     var objectConstructor = ({}).constructor;
-    */
     
+
+    if(!title || !titleLink || !description || !technology || !gitLink) throw new Error("all parameters are required.")
+
+
+    if(!Array.isArray(technology)) throw new Error("technology must be an array.")
+
+
+
     //if(content_obj !== objectConstructor) throw new Error("parameter must be a json object")
 
     var div_container = document.createElement("div")
@@ -67,7 +74,13 @@ function getContentContainer({title, titleLink, description, technology, gitLink
 
 
 
+try{
+    console.log(getContentContainer(content_obj))
+    container_content.append(getContentContainer(content_obj))
+}
+catch(err) {
+    console.error(err)
+}
 
-console.log(getContentContainer(content_obj))
 
-container_content.append(getContentContainer(content_obj))
+//container_content.append(getContentContainer(content_obj))
