@@ -151,3 +151,140 @@ h1{
         background-size: 100px;
     }
 }
+
+
+.content-container {
+    background-color: green;
+
+    padding: 20px 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+    min-width: 0;
+
+}
+
+
+.content-container .title {
+    background-color: orange;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+
+
+.content-container .description {
+    background-color: orangered;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+.content-container .tech {
+    background-color: yellow;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+
+
+
+
+
+
+.container-flex {
+    background-color: orange;
+    padding: 20px 0px;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-flex > * {
+    background-color: green;
+    width: 50%;
+    height: 200px;
+    min-height: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.container {
+    background-color: orange;
+
+    padding: 20px 10px;
+
+
+    overflow-wrap: break-word;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.child {
+    background-color: grey;
+
+    width: 98%;
+    overflow-wrap: break-word;
+
+    margin-bottom: 10px;
+
+}
+
+
+.container > .tech {
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow-wrap: break-word;
+    
+}
+
+
+.container > .tech > * {
+    background-color: brown;
+    margin: 10px 10px;
+    min-width: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow-wrap: break-word;
+
+    
+}
