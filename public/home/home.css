@@ -217,12 +217,12 @@ h1{
 
 .container > .child > a {
     text-decoration: none;
-    color: blue;
+    color: rgb(3, 102, 214);
     font-weight: bolder;
 }
 
 .container > .child > :visited {
-    color: blue;
+    color: rgb(3, 102, 214);
 }
 
 .container > .child > a:hover {
@@ -255,6 +255,9 @@ h1{
     border-radius: 10px;
 
     overflow-wrap: break-word;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 4px;
 
     
 }

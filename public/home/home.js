@@ -49,7 +49,7 @@ function getContentContainer({title, titleLink, description, technology, gitLink
                                 <div class="child tech"></div>
 
                                 <div class="child social-links">
-                                    <div class="git"><a class="gitLink" href=""><i class="fa fa-github" style="font-size:36px"></i></a></div>
+                                    <div class="git"><a class="gitLink" href="" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a></div>
                                 </div>`
 
 
