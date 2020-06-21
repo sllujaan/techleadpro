@@ -263,7 +263,11 @@ h1{
 
 .container >  .social-links > * {
     background-color: gold;
-    margin: 10px 10px;
+    margin: 0px 10px;
+}
+
+.container >  .social-links > * a {
+    color: black;
 }
 
 @media (max-width:300px) {

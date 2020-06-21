@@ -42,13 +42,13 @@ function getContentContainer({title, titleLink, description, technology, gitLink
                                 <div class="child tech"></div>
 
                                 <div class="child social-links">
-                                    <div class="git"></div>
+                                    <div class="git"><a class="gitLink" href=""><i class="fa fa-github" style="font-size:36px"></i></a></div>
                                 </div>`
 
 
 
     var tech = div_container.getElementsByClassName("tech")[0]
-    var git = div_container.getElementsByClassName("git")[0]
+    var git = div_container.getElementsByClassName("gitLink")[0]
     
 
     technology.forEach(techItem => {
@@ -59,7 +59,7 @@ function getContentContainer({title, titleLink, description, technology, gitLink
         tech.append(div_techItem)                               
     });
 
-    git.innerText = gitLink
+    git.setAttribute("href", gitLink)
 
     return div_container
 }
