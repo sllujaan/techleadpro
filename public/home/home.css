@@ -10,10 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 50vh;*/
-    font-size: x-large;
+    font-size: normal;
     margin-top: 38px;
     user-select: none;
+    /*
     font-family: pt-mono,"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
     margin: 0;
     padding: 0;
@@ -22,6 +25,21 @@ body {
 h1{
     background-color: #0336FF;
     color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    border-radius: var(--border-radius-box);
+    text-shadow: 0 0 2px white;
+}
+
+.error {
+    background-color: #FF0266;
+    font-size: 21px;
+    font-weight: bolder;
+    color: black;
     padding: 10px;
     text-align: center;
     margin: 10px;
@@ -149,5 +167,177 @@ h1{
         width: 100px;
         height: 100px;
         background-size: 100px;
+    }
+}
+
+
+
+
+
+
+.container-flex {
+    background-color: orange;
+    padding: 20px 0px;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-flex > * {
+    background-color: green;
+    width: 50%;
+    height: 200px;
+    min-height: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-content {
+
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+@media (min-width: 700px) {
+    .container-content {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+.container:first-child {
+    border-top: 1px solid lightgray;
+}
+
+.container {
+    /*
+    background-color: orange;
+    */
+    padding: 20px 10px;
+
+
+    overflow-wrap: break-word;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    border-bottom: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+.container > .description, .tech {
+    color:rgb(88, 96, 105);
+    font-size: 14px;
+}
+
+
+
+.container > .child {
+    /*
+    background-color: grey;
+    */
+
+    width: 98%;
+    overflow-wrap: break-word;
+
+    margin-bottom: 10px;
+
+}
+
+.container > .child > a {
+    text-decoration: none;
+    color: rgb(3, 102, 214);
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container > .child > :visited {
+    color: rgb(3, 102, 214);
+}
+
+.container > .child > a:hover {
+    text-decoration: underline;
+}
+
+
+.container > .tech {
+    /*
+    background-color: green;
+    */
+    width: 80%;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    overflow-wrap: break-word;
+    
+}
+
+
+.container > .tech > * {
+    background-color: lightgray;
+    margin: 2px 4px;
+    min-width: 0;
+    border-radius: 10px;
+
+    overflow-wrap: break-word;
+    
+    font-size: 14px;
+    padding: 0px 6px;
+
+    
+}
+
+
+.container >  .social-links {
+    width: 18%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.container >  .social-links > * {
+    /*
+    background-color: gold;
+    */
+    margin: 0px 10px;
+}
+
+.container >  .social-links > * a {
+    color: black;
+}
+
+@media (max-width:300px) {
+    .container > .tech {
+        width: 98%;
+    }
+
+    .container >  .social-links {
+        width: 98%;
     }
 }
