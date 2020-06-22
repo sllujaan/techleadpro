@@ -6,14 +6,7 @@
 
 var container_content = document.querySelector(".container-content")
 
-
-var content_obj = {
-    title: "aaaaaa",
-    titleLink: "link....",
-    description: "ou description....sss",
-    technology: ["c++" , "java", "javascript", "node js"],
-    gitLink: `https://github.com/sllujaan`
-}
+const GITHUB = `https://github.com/sllujaan/`
 
 
 
@@ -23,82 +16,53 @@ var contents = [
         titleLink: "https://authpro.herokuapp.com",
         description: "Every One can register thier selves and do the private tasks.",
         technology: ["Node js", "MYSQL", "Cloud Services", "Javascript" , "CSS", "HTML"],
-        gitLink: `https://github.com/sllujaan/login-signup`
+        gitLink: `${GITHUB}login-signup`
     },
     {
         title: "Typing-Test App",
         titleLink: "https://typingz.herokuapp.com",
         description: "This app allows you to test you typing speed.",
         technology: ["Javascript" , "CSS", "HTML"],
-        gitLink: `https://github.com/sllujaan/typing-test-javascript`
+        gitLink: `${GITHUB}typing-test-javascript`
     },
     {
         title: "To-Do App",
         titleLink: "https://todozapp.herokuapp.com",
         description: "App lets the user save daily tasks.",
         technology: ["Javascript" , "CSS", "HTML"],
-        gitLink: `https://github.com/sllujaan/To-Do-App-Javascript`
+        gitLink: `${GITHUB}To-Do-App-Javascript`
     },
     {
         title: "shopping-Cart App",
         titleLink: "https://shoppingpoint.herokuapp.com",
         description: "E-Comerce app lets you purchase items online from home.",
         technology: ["Javascript" , "CSS", "HTML"],
-        gitLink: `https://github.com/sllujaan/shoppingCart-javascript`
+        gitLink: `${GITHUB}shoppingCart-javascript`
     },
     {
         title: "Covid-19 App",
         titleLink: "https://covid19z.herokuapp.com",
         description: "Coronavirus app informs about the virus that how it is spreading around the world.",
         technology: ["Javascript" , "CSS", "HTML"],
-        gitLink: `https://github.com/sllujaan/Coronavirus_COVID-19`
+        gitLink: `${GITHUB}Coronavirus_COVID-19`
     },
     {
         title: "Muic-Player App",
         titleLink: "../dev/dev.html?name=Muic-Player App",
         description: "The app is under developement process......",
         technology: ["Node js", "Angular", "MYSQL", "Cloud Services", "Javascript" , "CSS", "HTML"],
-        gitLink: `https://github.com/sllujaan/`
+        gitLink: `${GITHUB}`
     },
     {
         title: "Text Editor - Desktop Application",
         titleLink: "../dev/dev.html?Text Editor - Desktop Application",
         description: "The app is under developement process......",
         technology: ["C++", "Windows Programming"],
-        gitLink: `https://github.com/sllujaan/text-editor`
+        gitLink: `${GITHUB}text-editor`
     }
     
     
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -187,3 +151,13 @@ catch(err) {
 
 
 //container_content.append(getContentContainer(content_obj))
+/*
+
+var content_obj = {
+    title: "aaaaaa",
+    titleLink: "link....",
+    description: "ou description....sss",
+    technology: ["c++" , "java", "javascript", "node js"],
+    gitLink: `https://github.com/sllujaan`
+}
+*/
