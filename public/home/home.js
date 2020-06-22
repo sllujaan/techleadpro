@@ -16,20 +16,14 @@ var content_obj = {
 }
 
 
+
 var contents = [
     {
-        title: "aaaaaa",
-        titleLink: "link....",
-        description: "ou description....sss",
-        technology: ["c++" , "java", "javascript", "node js"],
-        gitLink: `https://github.com/sllujaan`
-    },
-    {
-        title: "aaaaaa",
-        titleLink: "link....",
-        description: "ou description....sss",
-        technology: ["c++" , "java", "javascript", "node js"],
-        gitLink: `https://github.com/sllujaan`
+        title: "Secured User Authentication System",
+        titleLink: "https://authpro.herokuapp.com",
+        description: "Every One can register thier selves and do the private tasks.",
+        technology: ["Node js", "MYSQL", "Cloud Services", "Javascript" , "CSS", "HTML"],
+        gitLink: `https://github.com/sllujaan/login-signup`
     },
     {
         title: "Typing-Test App",
@@ -41,10 +35,40 @@ var contents = [
     {
         title: "To-Do App",
         titleLink: "https://todozapp.herokuapp.com",
-        description: "ou description....sss",
-        technology: ["c++" , "java", "javascript", "node js"],
-        gitLink: `https://github.com/sllujaan`
+        description: "App lets the user save daily tasks.",
+        technology: ["Javascript" , "CSS", "HTML"],
+        gitLink: `https://github.com/sllujaan/To-Do-App-Javascript`
+    },
+    {
+        title: "shopping-Cart App",
+        titleLink: "https://shoppingpoint.herokuapp.com",
+        description: "E-Comerce app lets you purchase items online from home.",
+        technology: ["Javascript" , "CSS", "HTML"],
+        gitLink: `https://github.com/sllujaan/shoppingCart-javascript`
+    },
+    {
+        title: "Covid-19 App",
+        titleLink: "https://covid19z.herokuapp.com",
+        description: "Coronavirus app informs about the virus that how it is spreading around the world.",
+        technology: ["Javascript" , "CSS", "HTML"],
+        gitLink: `https://github.com/sllujaan/Coronavirus_COVID-19`
+    },
+    {
+        title: "Muic-Player App",
+        titleLink: "../dev/dev.html?name=Muic-Player App",
+        description: "The app is under developement process......",
+        technology: ["Node js", "Angular", "MYSQL", "Cloud Services", "Javascript" , "CSS", "HTML"],
+        gitLink: `https://github.com/sllujaan/`
+    },
+    {
+        title: "Text Editor - Desktop Application",
+        titleLink: "../dev/dev.html?Text Editor - Desktop Application",
+        description: "The app is under developement process......",
+        technology: ["C++", "Windows Programming"],
+        gitLink: `https://github.com/sllujaan/text-editor`
     }
+    
+    
 ]
 
 
