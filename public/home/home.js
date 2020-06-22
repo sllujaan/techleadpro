@@ -45,7 +45,7 @@ function getContentContainer({title, titleLink, description, technology, gitLink
     div_container.innerHTML = `<div class="child">
                                     <a href="${titleLink}">${title}</a>
                                 </div>
-                                <div class="child">${description}</div>
+                                <div class="child description">${description}</div>
                                 <div class="child tech"></div>
 
                                 <div class="child social-links">
