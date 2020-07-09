@@ -19,3 +19,13 @@ if(version) {
     elem_download.setAttribute('href', `https://github.com/sllujaan/text-editor/releases/download/${version}/setup.msi`)
 }
 
+
+document.addEventListener('click', e => {
+    if(e.target === elem_download) {
+        if(elem_download.getAttribute('href') === '#') alert(`invalid url Parameter! ${version}`)
+    }
+})
+
+
+
+
