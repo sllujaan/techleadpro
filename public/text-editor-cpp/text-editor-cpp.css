@@ -15,6 +15,10 @@
     pointer-events: none;
 }
 
+.under-dev {
+    color: red;
+}
+
 body {
     /*
     display: flex;
