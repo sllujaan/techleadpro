@@ -1,0 +1,347 @@
+
+:root{
+    --border-radius-box: 10px;
+    --border-radius-btn: 4px;
+}
+
+.removed-prop {
+    box-shadow: none;
+}
+
+body {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;*/
+    font-size: normal;
+    margin-top: 38px;
+    user-select: none;
+    /*
+    font-family: pt-mono,"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    /* background-color: #0336FF; */
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    border-radius: var(--border-radius-box);
+    text-shadow: 0 0 2px white;
+}
+
+.error {
+    background-color: #FF0266;
+    font-size: 21px;
+    font-weight: bolder;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    border-radius: var(--border-radius-box);
+    text-shadow: 0 0 2px white;
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+
+}
+
+.start-container{
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    border-radius: var(--border-radius-box);
+    padding: 40px 10px;
+    
+    
+    /*margin-top: 50px;*/
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.start-container > div {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #FF0266;
+    color: black;
+    transition: all .1s;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    text-shadow: 0 0 3px gray;
+    font-size: x-large;
+    text-shadow: 0 0 1px black;
+    font-family: inherit;
+
+    width: 90%;
+
+
+}
+
+.btn:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .start-container {
+        width: 90%;
+    }
+
+}
+
+
+.image-container {
+
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    border: 4px solid #0336FF;
+
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+
+    background-image: url("../assets/images/FB_IMG_1538226423623.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s;
+}
+
+.image-container:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 202px) {
+    .image-container {
+        width: 100px;
+        height: 100px;
+        background-size: 100px;
+    }
+}
+
+
+
+
+
+
+.container-flex {
+    background-color: orange;
+    padding: 20px 0px;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-flex > * {
+    background-color: green;
+    width: 50%;
+    height: 200px;
+    min-height: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-content {
+
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+@media (min-width: 700px) {
+    .container-content {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+.container:first-child {
+    border-top: 1px solid lightgray;
+}
+
+.container {
+    /*
+    background-color: orange;
+    */
+    padding: 20px 10px;
+
+
+    overflow-wrap: break-word;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    border-bottom: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+.container > .description, .tech {
+    color:rgb(88, 96, 105);
+    font-size: 14px;
+}
+
+
+
+.container > .child {
+    /*
+    background-color: grey;
+    */
+
+    width: 98%;
+    overflow-wrap: break-word;
+
+    margin-bottom: 10px;
+
+}
+
+.container > .child > a {
+    text-decoration: none;
+    color: rgb(3, 102, 214);
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container > .child > :visited {
+    color: rgb(3, 102, 214);
+}
+
+.container > .child > a:hover {
+    text-decoration: underline;
+}
+
+
+.container > .tech {
+    /*
+    background-color: green;
+    */
+    width: 80%;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    overflow-wrap: break-word;
+    
+}
+
+
+.container > .tech > * {
+    background-color: lightgray;
+    margin: 2px 4px;
+    min-width: 0;
+    border-radius: 10px;
+
+    overflow-wrap: break-word;
+    
+    font-size: 14px;
+    padding: 0px 6px;
+
+    
+}
+
+
+.container >  .social-links {
+    width: 18%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.container >  .social-links > * {
+    /*
+    background-color: gold;
+    */
+    margin: 0px 10px;
+}
+
+.container >  .social-links > * a {
+    color: black;
+}
+
+@media (max-width:300px) {
+    .container > .tech {
+        width: 98%;
+    }
+
+    .container >  .social-links {
+        width: 98%;
+    }
+}
