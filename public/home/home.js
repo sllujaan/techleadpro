@@ -55,7 +55,7 @@ var contents = [
     },
     {
         title: "Text Editor - Desktop Application",
-        titleLink: "../dev/dev.html?Text Editor - Desktop Application",
+        titleLink: "../text-editor-cpp/text-editor-cpp.html",
         description: "The app is under developement process......",
         technology: ["C++", "Windows Programming"],
         gitLink: `${GITHUB}text-editor`
