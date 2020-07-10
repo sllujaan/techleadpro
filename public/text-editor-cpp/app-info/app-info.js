@@ -8,6 +8,7 @@ var shot1 = document.querySelector(".shot-1")
 
 
 const app_versions = [
+    'v1.1.0',
     'v1.0.0'
 ]
 const LATEST_VERSION = app_versions[0]
@@ -30,7 +31,7 @@ if(!valid_version) {
 
 // do stuff
 elem_version.innerHTML = `Version:       &nbsp;	&nbsp;	&nbsp;	&nbsp;${version}`
-elem_download.innerHTML = `Download: text-editor-${version}`
+elem_download.innerHTML = `Download: text-editor-${version} x86/x64`
 elem_download.setAttribute('href', `https://github.com/sllujaan/text-editor/releases/download/${version}/setup.msi`)
 shot1.querySelector('img').setAttribute('src', `./assets/${version}.gif`)
 
