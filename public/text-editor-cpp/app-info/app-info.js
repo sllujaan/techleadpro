@@ -13,8 +13,10 @@ var shot1 = document.querySelector(".shot-1")
 
 
 const app_versions = [
-    {name: "text-editor", version: 'v1.1.0', updated: '7/10/2020', description: 'Bug Fixes'},
-    {name: "text-editor", version: 'v1.0.0', updated: '7/9/2020', description: 'First Release'}
+    {name: "text-editor", version: 'v1.4.0', updated: '9/01/2020', description: 'Some new features has been added like search direction & window remembers its dimensions.', alt_version_url:"1.4.0"},
+    {name: "text-editor", version: 'v1.2.4', updated: '7/16/2020', description: 'Major bugs fixes when reading writing files.', alt_version_url:"1.2.4"},
+    {name: "text-editor", version: 'v1.1.0', updated: '7/10/2020', description: 'Bug Fixes', alt_version_url:""},
+    {name: "text-editor", version: 'v1.0.0', updated: '7/9/2020', description: 'First Release', alt_version_url:""}
 ]
 const LATEST_VERSION = app_versions[0]
 
@@ -47,7 +49,8 @@ elem_description.innerHTML = `Description:       &nbsp;	&nbsp;	&nbsp;	&nbsp;${ve
 
 
 elem_download.innerHTML = `Download: text-editor-${version.version} x86/x64`
-elem_download.setAttribute('href', `https://github.com/sllujaan/text-editor/releases/download/${version.version}/setup.msi`)
+const VERSION_URL = (version.alt_version_url) ? (version.alt_version_url) : (version.version);
+elem_download.setAttribute('href', `https://github.com/sllujaan/text-editor/releases/download/${VERSION_URL}/setup.msi`)
 shot1.querySelector('img').setAttribute('src', `./assets/${version.version}.gif`)
 
 
